@@ -45,7 +45,7 @@ section {
     color: cadetblue;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding:.8rem 3rem;
     border:.2rem solid blueviolet;
@@ -104,7 +104,7 @@ header .logo i {
 
 header .navbar a {
     font-size: 2rem;
-    margin: 2rem;
+    margin-left: 2rem;
     color: blueviolet;
 }
 
@@ -196,6 +196,7 @@ header .navbar a:hover {
     background:navajowhite;
     padding:2rem;
 }
+
 
 
 .speciality-meals .box-container .box .content h3{
@@ -442,6 +443,41 @@ header .navbar a:hover {
 .footer .credit span {
     color: cadetblue;
 }
+
+#scroll-top{
+    position: fixed;
+    top:-120%;
+    right:2rem;
+    padding:.5rem 1.5rem;
+    font-size: 4rem;
+    background:cadetblue;
+    color: navajowhite;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+}
+
+#scroll-top.active{
+    top:calc(100% - 12rem)
+}
+
+.loader-container{
+    position: fixed;
+    top:0; left:0;
+    z-index: 10000;
+    background: navajowhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+}
+
+.loader-container.fade-out{
+    top:-120%;
+}
+
+
 
 
 
